@@ -62,6 +62,40 @@ Observed difference:
 
 That makes the skill useful not just as documentation, but as a behavior-shaping tool.
 
+## Before / After
+
+### Without `harness-creator`
+
+- analysis often stops at repo reconnaissance
+- answers drift into broad "AI agent" advice
+- architecture is described, but implementation order is weak
+- source-backed facts and inferred recommendations get mixed together
+
+### With `harness-creator`
+
+- the answer is pushed toward a layered runtime model
+- module boundaries become explicit
+- implementation order becomes actionable
+- safety and verification are treated as first-class, not optional polish
+- source-backed facts are separated from inferred design choices
+
+## Case Study
+
+### Case: "Design a Claude Code-inspired CLI coding agent"
+
+**Baseline behavior**
+- slowed down into clarification or exploratory framing
+- did not always converge on a strong output contract
+
+**With the skill**
+- produced a concrete "current state -> architecture -> implementation order -> safety/verification -> facts vs inference" structure
+- mapped the answer back to real source areas such as `QueryEngine`, `query.ts`, `Tool.ts`, task tools, shell permission layers, memory, and compaction
+- gave a practical build ladder instead of only conceptual guidance
+
+### Why that matters
+
+That difference saves time in real engineering work. Instead of spending another round asking "so what should we build first?", the team can move directly into implementation planning.
+
 ## Quick Start
 
 Clone or copy this repository into your Codex skills directory:
@@ -129,6 +163,10 @@ It is not affiliated with Anthropic.
 ## Chinese Documentation
 
 See [README.zh-CN.md](README.zh-CN.md).
+
+## More Skills
+
+Browse the collection page: [codex-skills-hub](https://github.com/Arthurescc/codex-skills-hub)
 
 ## License
 

@@ -39,6 +39,36 @@
 - 不使用 skill：结果更容易停留在澄清问题或宽泛分析。
 - 使用 `$harness-creator`：结果会明显更快收束到具体架构、实现顺序、安全规则和事实/推断边界。
 
+## 更直观的前后差异
+
+### 不使用 skill
+
+- 更容易停在“先看看范围要不要再细化”
+- 更容易给出泛化的 agent 建议
+- 会讲架构，但不一定讲清楚先做什么、后做什么
+- 容易把源码事实和推断建议混在一起
+
+### 使用 `$harness-creator`
+
+- 输出会更稳定地落到分层 runtime 模型
+- 模块边界会更清晰
+- 实施顺序会更像真正可执行的计划
+- 安全和验证不再是附带说明，而是核心组成
+- 会更明确地区分“源码里已经证实的内容”和“建议这样设计的内容”
+
+## 案例
+
+### 场景：设计一个受 Claude Code 启发的 CLI coding agent
+
+**baseline**
+- 容易停在探索和澄清阶段
+- 输出结构不够稳定
+
+**使用 skill 后**
+- 会更稳定地产出“当前状态 -> 推荐架构 -> 实施顺序 -> 安全/验证 -> 事实/推断”的结构
+- 能更自然地把结果映射回 `QueryEngine`、`query.ts`、`Tool.ts`、task tools、权限层、memory、compaction 这些真实源码区域
+- 给出的不只是概念，而是更接近下一步可执行方案
+
 ## 安装方式
 
 ### Windows
@@ -86,6 +116,10 @@ assets/
 - [sanbuphy/claude-code-source-code](https://github.com/sanbuphy/claude-code-source-code)
 
 与 Anthropic 无官方关联。
+
+## 更多技能
+
+总导航页见：[codex-skills-hub](https://github.com/Arthurescc/codex-skills-hub)
 
 ## License
 
