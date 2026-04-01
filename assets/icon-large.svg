@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Harness Creator icon">
+  <defs>
+    <linearGradient id="hc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="hc-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#86efac" />
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#hc-bg)" />
+  <rect x="104" y="128" width="304" height="56" rx="28" fill="#e2e8f0" opacity="0.18" />
+  <rect x="104" y="228" width="304" height="56" rx="28" fill="#e2e8f0" opacity="0.18" />
+  <rect x="104" y="328" width="304" height="56" rx="28" fill="#e2e8f0" opacity="0.18" />
+  <path d="M176 344V168h40v68h80v-68h40v176h-40v-72h-80v72z" fill="#f8fafc" />
+  <circle cx="176" cy="156" r="16" fill="url(#hc-accent)" />
+  <circle cx="336" cy="356" r="16" fill="url(#hc-accent)" />
+  <path d="M336 156c34 0 62 28 62 62" fill="none" stroke="url(#hc-accent)" stroke-linecap="round" stroke-width="18" />
+  <path d="M176 356c-34 0-62-28-62-62" fill="none" stroke="url(#hc-accent)" stroke-linecap="round" stroke-width="18" />
+</svg>

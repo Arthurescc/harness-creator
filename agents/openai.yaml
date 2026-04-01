@@ -1,0 +1,7 @@
+interface:
+  display_name: "Harness Creator"
+  short_description: "Build safe, layered agent harnesses and orchestration workflows."
+  icon_small: "./assets/icon-small.svg"
+  icon_large: "./assets/icon-large.svg"
+  brand_color: "#1450D2"
+  default_prompt: "Use $harness-creator to design and implement a production-ready agent harness for this codebase."

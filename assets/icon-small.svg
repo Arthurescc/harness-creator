@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Harness Creator small icon">
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="#1450d2" />
+  <path d="M40 86V42h10v16h28V42h10v44H78V68H50v18z" fill="#f8fafc" />
+  <circle cx="40" cy="34" r="5" fill="#86efac" />
+  <circle cx="88" cy="94" r="5" fill="#7dd3fc" />
+</svg>
