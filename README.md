@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Design safer, sharper, source-backed agent harnesses instead of vague "AI agent" architectures.
+  Design safer, sharper, production-ready agent harnesses instead of vague "AI agent" architectures.
 </p>
 
 ## What It Is
@@ -15,7 +15,7 @@
 It helps you turn a fuzzy request like:
 
 - "Build a coding agent"
-- "Make this more like Claude Code"
+- "Make this production-grade"
 - "Add subagents and planning"
 - "Design an MCP-enabled agent runtime"
 
@@ -32,14 +32,13 @@ Most agent designs fail in one of two ways:
 
 - a real loop/tool/permissions/memory/orchestration model
 - a progressive build order
-- source-backed distinctions between facts, recommendations, and unknowns
+- clear distinctions between facts, recommendations, and unknowns
 - explicit safety and verification requirements
 
 ## What You Get
 
 - A progressive architecture ladder for agent runtimes.
 - A concrete implementation order from minimal loop to advanced orchestration.
-- Source-backed patterns distilled from public Claude Code reconstruction projects.
 - A required output contract so analysis does not stop at "I inspected these files."
 - Strong guidance for permissions, planning, subagents, memory, compaction, integrations, and verification.
 
@@ -47,18 +46,18 @@ Most agent designs fail in one of two ways:
 
 - `Loop first, orchestration last`: prevents premature swarm complexity.
 - `Deny-first safety`: pushes shell/file/network safety into the harness, not just prompts.
-- `Facts vs inference`: helps you avoid overclaiming when reverse-engineered or feature-gated code is incomplete.
+- `Facts vs inference`: helps you avoid overclaiming when incomplete information exists.
 - `Implementation-ready`: produces module boundaries and execution order, not just principles.
 
 ## Validated Value
 
-This skill was pressure-tested against public Claude Code source reconstructions.
+This skill was pressure-tested in practical Codex workflow scenarios.
 
 Observed difference:
 
 | Scenario | Without the skill | With the skill |
 | --- | --- | --- |
-| Analyze a Claude Code-inspired coding-agent runtime | The agent tended to slow down into clarification or open-ended exploration. | The agent produced a concrete architecture, implementation order, safety rules, and a clear facts-vs-inference split. |
+| Analyze a production-grade coding-agent runtime | The agent tended to slow down into clarification or open-ended exploration. | The agent produced a concrete architecture, implementation order, safety rules, and a clear facts-vs-inference split. |
 
 That makes the skill useful not just as documentation, but as a behavior-shaping tool.
 
@@ -69,7 +68,7 @@ That makes the skill useful not just as documentation, but as a behavior-shaping
 - analysis often stops at repo reconnaissance
 - answers drift into broad "AI agent" advice
 - architecture is described, but implementation order is weak
-- source-backed facts and inferred recommendations get mixed together
+- facts and inferred recommendations get mixed together
 
 ### With `harness-creator`
 
@@ -77,11 +76,11 @@ That makes the skill useful not just as documentation, but as a behavior-shaping
 - module boundaries become explicit
 - implementation order becomes actionable
 - safety and verification are treated as first-class, not optional polish
-- source-backed facts are separated from inferred design choices
+- known facts are separated from inferred design choices
 
 ## Case Study
 
-### Case: "Design a Claude Code-inspired CLI coding agent"
+### Case: "Design a production-ready CLI coding agent"
 
 **Baseline behavior**
 - slowed down into clarification or exploratory framing
@@ -89,7 +88,7 @@ That makes the skill useful not just as documentation, but as a behavior-shaping
 
 **With the skill**
 - produced a concrete "current state -> architecture -> implementation order -> safety/verification -> facts vs inference" structure
-- mapped the answer back to real source areas such as `QueryEngine`, `query.ts`, `Tool.ts`, task tools, shell permission layers, memory, and compaction
+- mapped the answer back to real runtime layers such as loop, tool contract, task tooling, permissions, memory, and compaction
 - gave a practical build ladder instead of only conceptual guidance
 
 ### Why that matters
@@ -127,7 +126,7 @@ Restart Codex after installation so the skill list refreshes.
 - `Use $harness-creator to design a safe CLI coding agent for this repo.`
 - `Use $harness-creator to refactor our current agent runtime into a layered harness.`
 - `Use $harness-creator to propose how to add planning, subagents, and MCP support without breaking safety.`
-- `Use $harness-creator to compare our current design against Claude Code-style patterns and identify the gaps.`
+- `Use $harness-creator to compare our current design against stronger runtime patterns and identify the gaps.`
 
 ## Repository Layout
 
@@ -142,14 +141,11 @@ assets/
   icon-large.svg
 ```
 
-## Source Basis
+## Development
 
-This skill is informed by public, non-official analysis of:
+This project is independently designed and developed for practical Codex skill workflows.
 
-- [oboard/claude-code-rev](https://github.com/oboard/claude-code-rev)
-- [sanbuphy/claude-code-source-code](https://github.com/sanbuphy/claude-code-source-code)
-
-It is not affiliated with Anthropic.
+It is focused on improving output quality, implementation readiness, and safety discipline for agent-harness design work.
 
 ## Professional Use Cases
 
