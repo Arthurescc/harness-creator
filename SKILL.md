@@ -1,6 +1,6 @@
 ---
 name: harness-creator
-description: Design and implement safe, layered agent harnesses and orchestration workflows. Use when the user wants a coding agent, CLI agent, tool-calling assistant, multi-agent runtime, plan/task system, subagent framework, MCP-integrated harness, or Claude Code/Codex-style agent workflow built or refactored.
+description: Design and implement safe, layered agent harnesses and orchestration workflows. Portable across Codex, OpenClaw, Claude Code, Hermes Agent, and similar SKILL.md-compatible coding agents. Use when the user wants a coding agent, CLI agent, tool-calling assistant, multi-agent runtime, plan/task system, subagent framework, MCP-integrated harness, or Claude Code/Codex-style agent workflow built or refactored.
 ---
 
 # Harness Creator
